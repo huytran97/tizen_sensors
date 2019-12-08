@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, user-scalable=no"/>
+	<title>Wearable UI</title>
+	<link rel="stylesheet"  href="../../../lib/tau/wearable/theme/default/tau.min.css">
+	<link rel="stylesheet"  href="../../../css/style.css">
+</head>
+
+<body>
+<div id="bottomButtonWithMorePage" class="ui-page">
+	<link rel="stylesheet"  href="multiplebutton.css">
+	<header class="ui-header">
+		<h2 class="ui-title">Multiple Buttons</h2>
+	</header>
+	<div class="ui-content content-padding">
+		It was a real pleasure for me to finally get to meet you. My colleagues join me in sending you our holiday greetings.
+	</div>
+
+	<!-- Circle Profile -->
+	<a class="popup-handler"></a>
+
+	<div id="moreButtonPopup" class="ui-popup">
+		<div id="selector" class="ui-selector">
+			<div class="ui-item show-icon" data-title="2"></div>
+			<div class="ui-item human-icon" data-title="3"></div>
+		</div>
+	</div>
+
+	<footer class="ui-footer ui-grid-col-3 ui-bottom-button ui-fixed">
+		<a href="#" class="ui-btn">1</a>
+		<a href="#" class="ui-btn">2</a>
+		<a href="#" class="ui-btn">3</a>
+	</footer>
+	<script type="text/javascript" src="multiplebutton.js"></script>
+</div>
+<script type="text/javascript" src="../../../lib/tau/wearable/js/tau.min.js"></script>
+</body>
+</html>

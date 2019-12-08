@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+	<title>WearableUI</title>
+	<link rel="stylesheet"  href="../../lib/tau/wearable/theme/default/tau.min.css">
+	<link rel="stylesheet"  href="../../css/style.css">
+</head>
+<body>
+	<div class="ui-page" id="page_webkitui">
+		<header class="ui-header">
+			<h2 class="ui-title">Webkit UI demos</h2>
+		</header>
+		<div class="ui-content content-padding">
+			<div class="sample">
+				<h3>Radio</h2>
+				<div>
+					<textarea style="width:95%;" readonly><input type="radio" /></textarea>
+				</div>
+				<div>
+					<input type="radio" />
+				</div>
+			</div>
+
+			<div class="sample">
+				<h3>Radio Group</h2>
+				<div>
+					<textarea style="width:95%; height:120px;" readonly><input type="radio" name="sampleradio" />
+					<input type="radio" name="sampleradio" />
+					<input type="radio" name="sampleradio" /></textarea>
+				</div>
+				<div>
+					<input type="radio" name="sampleradio" />
+					<input type="radio" name="sampleradio" />
+					<input type="radio" name="sampleradio" />
+				</div>
+			</div>
+
+			<div class="sample">
+				<h3>Checkbox</h2>
+				<div>
+					<textarea style="width:95%;" readonly><input type="checkbox" /></textarea>
+				</div>
+				<div>
+					<input type="checkbox" />
+				</div>
+			</div>
+
+			<div class="sample">
+				<h3>Slider</h2>
+				<div>
+					<textarea style="width:95%;" readonly><input type="range" /></textarea>
+				</div>
+				<div>
+					<input type="range" />
+				</div>
+			</div>
+
+			<div class="sample">
+				<h3>Button - button tag</h2>
+				<div>
+					<textarea style="width:95%;" readonly><button>button</button></textarea>
+				</div>
+				<div>
+					<button>button</button>
+				</div>
+			</div>
+
+			<div class="sample">
+				<h3>Button - a tag</h2>
+				<div>
+					<textarea style="width:95%;" readonly><a href="#">A button</a></textarea>
+				</div>
+				<div>
+					<a href="#">A button</a>
+				</div>
+			</div>
+
+			<div class="sample">
+				<h3>Scroll</h2>
+				<div>
+					<textarea style="width:95%;" readonly><div class="scroll">Contents</div></textarea>
+				</div>
+				<div>
+					<div class="scroll">You can use the overflow property when you want to have better control of the layout. The default value is visible.</div>
+				</div>
+			</div>
+			<div class="sample">
+				<h3>Date/Time picker</h3>
+				<div>
+					Date: <input type="date" style="width:95%"></input>
+				</div>
+				<div>
+					Time: <input type="time" style="width:95%"></input>
+				</div>
+				<input type="time" id="input_webkitui_hiddentime" style="visibility:hidden; width:50px"></input>
+				<div>
+					Hidden time: <button class="ui-btn" id="button_webkitui_hiddendateopener" style="display:block">Open timepicker</button><span id="webkitui_hiddentime_value"></span>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="webkit.js"></script>
+	</div>
+
+<script type="text/javascript" src="../../lib/tau/wearable/js/tau.min.js"></script>
+</body>
+</html>

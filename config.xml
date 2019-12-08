@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="http://huytr/HAR" version="1.0.0" viewmodes="fullscreen">
+    <access origin="http://websocket.org/echo.html" subdomains="true"></access>
+    <access origin="farmer.cloudmqtt.com" subdomains="true"></access>
+    <access origin="https://api.cloudmqtt.com/console/82646643/websocket" subdomains="true"></access>
+    <access origin="broker.hivemq.com" subdomains="true"></access>
+    <access origin="ws://echo.websocket.org" subdomains="true"></access>
+    <access origin="wss://farmer.cloudmqtt.com" subdomains="true"></access>
+    <access origin="*" subdomains="true"></access>
+    <tizen:application id="KkCq0FiXYe.TAUUIComponents" package="KkCq0FiXYe" required_version="2.3.1"/>
+    <content src="index.html"/>
+    <tizen:content-security-policy>default-src *; script-src *; connect-src *; img-src *; style-src *;</tizen:content-security-policy>
+    <feature name="http://tizen.org/feature/screen.size.normal"/>
+    <feature name="tizen.org/feature/sensor.gyroscope"/>
+    <feature name="tizen.org/feature/network.wifi"/>
+    <feature name="tizen.org/feature/network.internet"/>
+    <feature name="tizen.org/feature/network.push"/>
+    <feature name="tizen.org/feature/network.secure_element"/>
+    <feature name="tizen.org/feature/web.service"/>
+    <feature name="tizen.org/feature/sensor.accelerometer"/>
+    <feature name="tizen.org/feature/humanactivitymonitor"/>
+    <icon src="icon.png"/>
+    <name>HAR</name>
+    <tizen:privilege name="http://developer.samsung.com/tizen/privilege/accessoryprotocol"/>
+    <tizen:privilege name="http://tizen.org/privilege/application.info"/>
+    <tizen:privilege name="http://tizen.org/privilege/content.read"/>
+    <tizen:privilege name="http://tizen.org/privilege/content.write"/>
+    <tizen:privilege name="http://tizen.org/privilege/package.info"/>
+    <tizen:privilege name="http://tizen.org/privilege/setting"/>
+    <tizen:privilege name="http://tizen.org/privilege/system"/>
+    <tizen:privilege name="http://tizen.org/privilege/healthinfo"/>
+    <tizen:privilege name="http://tizen.org/privilege/push"/>
+    <tizen:privilege name="http://tizen.org/privilege/internet"/>
+    <tizen:privilege name="http://tizen.org/privilege/application.launch"/>
+    <tizen:privilege name="http://tizen.org/privilege/filesystem.read"/>
+    <tizen:profile name="wearable"/>
+    <tizen:setting background-support="enable" encryption="disable" hwkey-event="enable"/>
+</widget>

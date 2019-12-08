@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+	<title>Wearable UI</title>
+	<link rel="stylesheet"  href="../../lib/tau/wearable/theme/default/tau.min.css">
+	<link rel="stylesheet"  href="../../css/style.css">
+</head>
+<body>
+	<div class="ui-page" id="selectModePage">
+        <header class="ui-header">
+            <h2 class="ui-title">Select Mode</h2>
+        </header>
+		<div class="ui-content">
+			<ul class="ui-listview">
+				<li>List one</li>
+				<li>List two</li>
+				<li>List three</li>
+				<li>List four</li>
+				<li>List five</li>
+				<li>List six</li>
+			</ul>
+		</div>
+
+        <div class="select-mode">
+		    <!-- select button -->
+		    <div class="select-btn" id="select-btn">
+                <a class="select-btn-text" id="select-btn-text"></a>
+            </div>
+            <!-- select option popup -->
+            <div class="select-popup">
+                <ul class="ui-listview select-mode-btn-list">
+                    <li><a href="#" id="select-all">Select all</a></li>
+                    <li><a href="#" id="deselect-all">Deselect all</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+		<!-- Drawer Handler -->
+		<a id="handler" href="#rightDrawer" class="drawer-handler">Right Handler</a>
+
+		<!-- Drawer Section -->
+		<div id="rightDrawer" class="ui-drawer" data-drawer-target="#selectModePage"
+			data-position="right" data-enable="true" data-drag-edge="1">
+			<div id="selector" class="ui-selector">
+				<div class="ui-item show-icon" data-title="Show"></div>
+				<div class="ui-item human-icon" data-title="Human"></div>
+				<div class="ui-item delete-icon" data-title="Delete"></div>
+				<div class="ui-item show-icon" data-title="Show"></div>
+				<div class="ui-item human-icon" data-title="Human"></div>
+				<div class="ui-item delete-icon" data-title="Delete"></div>
+			</div>
+		</div>
+	<script src="list_selectmode.js"></script>
+	</div>
+<script type="text/javascript" src="../../lib/tau/wearable/js/tau.min.js"></script>
+</body>
+</html>

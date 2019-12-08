@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, user-scalable=no"/>
+	<title>Wearable UI</title>
+	<link rel="stylesheet" href="../../../lib/tau/wearable/theme/default/tau.min.css">
+	<link rel="stylesheet" media="all and (-tizen-geometric-shape: circle)" href="../../../lib/tau/wearable/theme/default/tau.circle.min.css">
+	<link rel="stylesheet" href="../../../css/style.css">
+</head>
+<body>
+<div id="sectionChangerPage" class="ui-page" data-enable-page-scroll="false">
+	<style>
+		section {
+			padding: 0 10px 0 10px;
+			height: 100%;
+		}
+		.thumbnail {
+			height: 300px;
+			width: 200px;
+			background-color: #80482f;
+			top: 50%;
+			transform: translate3d(0, -50%, 0);
+			position: relative;
+			text-align: center;
+			line-height: 300px;
+
+		}
+		.ui-section-active .thumbnail{
+			background-color: #000000;
+			border: 1px solid #a06322;
+		}
+
+		@media all and (-tizen-geometric-shape: circle) {
+			section {
+				padding: 0;
+			}
+			section:first-child .thumbnail {
+				background-image: url(../../../css/images/thumbnail_left.png);
+			}
+			section:last-child .thumbnail {
+				background-image: url(../../../css/images/thumbnail_right.png);
+			}
+			.thumbnail {
+				height: 216px;
+				width: 216px;
+				border-radius: 50%;
+				background-image: url(../../../css/images/thumbnail_center.png);
+				background-color: transparent;
+				text-indent: 999px;
+				top: 50%;
+				position: relative;
+				text-align: center;
+				line-height: 200px;
+				transform: scale(0.8) translate3d(0, -60%, 0);
+				transition: transform 300ms;
+			}
+			.ui-section-active .thumbnail{
+				transform: scale(1) translate3d(0, -50%, 0);
+				background-color: transparent;
+				border: none;
+			}
+		}
+	</style>
+	<div id="sectionChanger" class="ui-content ui-section-changer">
+		<div id="scroller">
+			<section class="ui-section-active">
+				<div class="thumbnail">1</div>
+			</section>
+			<section>
+				<div class="thumbnail">2</div>
+			</section>
+			<section>
+				<div class="thumbnail">3</div>
+			</section>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="thumbnail.js"></script>
+</div>
+<script type="text/javascript" src="../../../lib/tau/wearable/js/tau.min.js"></script>
+</body>
+</html>

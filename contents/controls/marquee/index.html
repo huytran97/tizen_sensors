@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+	<title>Wearable UI</title>
+	<link rel="stylesheet" href="../../../lib/tau/wearable/theme/default/tau.min.css">
+	<link rel="stylesheet" media="all and (-tizen-geometric-shape: circle)" href="../../../lib/tau/wearable/theme/default/tau.circle.min.css">
+	<link rel="stylesheet" href="../../../css/style.css">
+</head>
+<body>
+<div class="ui-page" id="marqueeTest" data-enable-page-scroll="false">
+	<header class="ui-header">
+		<h2 class="ui-title">Marquee</h2>
+	</header>
+	<div class="ui-content">
+		<div class="ui-marquee ui-marquee-gradient" style="height:100px;line-height:100px" id="marquee">
+			MarqueeTEST TEST message TEST for marquee
+		</div>
+		<div style="font-size:25px;text-align:center;padding-bottom:15px;">sub-text</div>
+	</div>
+	<footer class="ui-footer ui-grid-col-2 ui-fixed">
+		<a href="#" class="ui-btn" id="start">STOP</a>
+		<a href="#" class="ui-btn" id="reset">RESET</a>
+	</footer>
+	<script src="marquee.js"></script>
+</div>
+<script type="text/javascript" src="../../../lib/tau/wearable/js/tau.min.js"></script>
+</body>
+</html>

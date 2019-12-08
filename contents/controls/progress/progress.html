@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+	<title>Wearable UI</title>
+	<link rel="stylesheet"  href="../lib/tau/wearable/theme/circle/tau.min.css">
+	<link rel="stylesheet"  href="../../css/style.css">
+</head>
+<body>
+	<div class="ui-page" id="pageCircleProgressBar" data-enable-page-scroll="false">
+		<header class="ui-header">
+			<h2 class="ui-title">Progress</h2>
+		</header>
+		<div class="ui-content content-padding">
+			<div class="result" id="result"></div>
+			<progress class="ui-circle-progress" id="circleprogress" max="100" value="20"></progress>
+		</div>
+        <footer class="ui-footer ui-grid-col-2">
+            <a href="#" class="ui-btn" id="minus">-10%</a>
+            <a href="#" class="ui-btn" id="plus">+10%</a>
+        </footer>
+		<script src="progress.js"></script>
+	</div>
+</body>
+<script type="text/javascript" src="../lib/tau/wearable/js/tau.min.js"></script>
+</html>
